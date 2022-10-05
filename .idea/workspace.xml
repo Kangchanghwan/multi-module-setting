@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="" />
+    <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/login.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsTestSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-fields.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-parameters.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-part-fields.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-parts.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/response-fields.snippet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/ApiUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/ApiUserApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/ListResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/ListResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/SingleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/SingleResult.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,45 +75,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="back-guidev2" type="f1a62948:ProjectNode" />
+                <item name="api-user" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="back-guidev2" type="f1a62948:ProjectNode" />
+                <item name="api-user" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="querydsl" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="module-domain" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="module-domain" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="module-domain" type="2d1252cf:ModuleNode" />
+                <item name="api-user" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="module-domain" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="back-guidev2" type="f1a62948:ProjectNode" />
-                <item name="module-domain" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="querydsl" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -100,6 +101,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -119,7 +121,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -137,39 +139,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gangchanghwan/Documents/back-guidev2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;658c2bb18a3b991161c42cfb926afbf0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "aspect.path.notification.shown": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "last_opened_file_path": "/Users/gangchanghwan/Documents/back-guidev2/api-user/src/test/resources/org/springframework/restdocs/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15332031",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "658c2bb18a3b991161c42cfb926afbf0"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates" />
+      <recent name="$PROJECT_DIR$/api-user/src/test/resources" />
       <recent name="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser" />
       <recent name="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain" />
       <recent name="$PROJECT_DIR$/module-system/src/main/java/com/example/modulesystem" />
-      <recent name="$PROJECT_DIR$/module-infra/src/main/java/com/example/moduleinfra/s3" />
-      <recent name="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-user/src/docs/asciidoc" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.apiuser.domain.member.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.moduledomain.config" />
@@ -182,11 +198,34 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiUserApplication">
-    <configuration name="back-guidev2 [:module-domain:compileQuerydslJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.back-guidev2:api-user [build]">
+    <configuration name="MemberControllerTest.로그인 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-user:test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.apiuser.domain.member.controller.MemberControllerTest.로그인&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="back-guidev2:api-user [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-user" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -194,7 +233,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":module-domain:compileQuerydslJava" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,89 +243,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="back-guidev2 [:module-domain:compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":module-domain:compileQuerydsl" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="MemberControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-guidev2.api-user.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apiuser.domain.member.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apiuser.domain.member.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.domain.member.controller.MemberControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="back-guidev2 [cleanQuerydslSourcesDir]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanQuerydslSourcesDir" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="MemberControllerTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-guidev2.api-user.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apiuser.domain.member.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apiuser.domain.member.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.domain.member.controller.MemberControllerTest" />
+      <option name="METHOD_NAME" value="회원가입" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="back-guidev2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="back-guidev2 [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileQuerydsl" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="MemberControllerTest.로그인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-guidev2.api-user.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apiuser.domain.member.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apiuser.domain.member.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.domain.member.controller.MemberControllerTest" />
+      <option name="METHOD_NAME" value="로그인" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ApiUserApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back-guidev2.api-user.main" />
@@ -347,11 +349,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.back-guidev2 [:module-domain:compileQuerydslJava]" />
-      <item itemvalue="Gradle.back-guidev2 [:module-domain:compileQuerydsl]" />
-      <item itemvalue="Gradle.back-guidev2 [cleanQuerydslSourcesDir]" />
-      <item itemvalue="Gradle.back-guidev2 [clean]" />
-      <item itemvalue="Gradle.back-guidev2 [compileQuerydsl]" />
+      <item itemvalue="Gradle.MemberControllerTest.로그인 (1)" />
+      <item itemvalue="Gradle.back-guidev2:api-user [build]" />
+      <item itemvalue="JUnit.MemberControllerTest" />
+      <item itemvalue="JUnit.MemberControllerTest.로그인" />
+      <item itemvalue="JUnit.MemberControllerTest.회원가입" />
       <item itemvalue="Spring Boot.ApiUserApplication" />
       <item itemvalue="Spring Boot.ApiUserApplication (1)" />
       <item itemvalue="Spring Boot.ModuleCoreApplication" />
@@ -363,11 +365,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.back-guidev2 [:module-domain:compileQuerydsl]" />
-        <item itemvalue="Gradle.back-guidev2 [cleanQuerydslSourcesDir]" />
-        <item itemvalue="Gradle.back-guidev2 [compileQuerydsl]" />
-        <item itemvalue="Gradle.back-guidev2 [clean]" />
-        <item itemvalue="Gradle.back-guidev2 [:module-domain:compileQuerydslJava]" />
+        <item itemvalue="Gradle.back-guidev2:api-user [build]" />
+        <item itemvalue="JUnit.MemberControllerTest" />
+        <item itemvalue="JUnit.MemberControllerTest.로그인" />
+        <item itemvalue="JUnit.MemberControllerTest.회원가입" />
+        <item itemvalue="Gradle.MemberControllerTest.로그인 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +386,7 @@
       <workItem from="1664883296853" duration="575000" />
       <workItem from="1664884188987" duration="18000" />
       <workItem from="1664935362331" duration="3270000" />
-      <workItem from="1664938655631" duration="288000" />
+      <workItem from="1664938655631" duration="24792000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1664883534383</created>
@@ -407,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664938893509</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1664939165548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664939165548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

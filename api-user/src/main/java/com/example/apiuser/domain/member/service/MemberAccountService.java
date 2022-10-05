@@ -1,6 +1,7 @@
 package com.example.apiuser.domain.member.service;
 
 import com.example.apiuser.domain.member.res.LoginRes;
+import com.example.apiuser.domain.member.res.MemberInfoRes;
 import com.example.apiuser.domain.member.vo.LoginReq;
 import com.example.modulecore.response.ResponseService;
 import com.example.modulecore.response.SingleResult;
@@ -21,15 +22,14 @@ public class MemberAccountService {
   private final MemberRepository memberRepository;
   private final PasswordEncoder passwordEncoder;
   private final JwtProvider jwtProvider;
-  private final ResponseService responseService;
 
-  public SingleResult<LoginRes> login(LoginReq loginReq) {
+  public LoginRes login(LoginReq loginReq) {
     Member member = memberRepository.findByUserId(loginReq.getUserId()).orElseThrow(notFoundMember());
     checkPassword(loginReq.getPassword(), member.getPassword());
     String accessToken = jwtProvider.createAccessToken(member.getUserId());
     String refreshToken = jwtProvider.createRefreshToken(member.getUserId());
 
-    return responseService.getSingleResult(LoginRes.of(accessToken,refreshToken,member));
+    return LoginRes.of(accessToken,refreshToken,member);
 
   }
 
@@ -44,7 +44,7 @@ public class MemberAccountService {
     }
   }
 
-  public SingleResult<Member> getInfo(String userId) {
-    return responseService.getSingleResult(memberRepository.searchMember(userId).orElseThrow(notFoundMember()));
+  public MemberInfoRes getInfo(String userId) {
+    return MemberInfoRes.of(memberRepository.searchMember(userId).orElseThrow(notFoundMember()));
   }
 }

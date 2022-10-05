@@ -1,5 +1,6 @@
 package com.example.apiuser.domain.member.service;
 
+import com.example.apiuser.domain.member.res.MemberInfoRes;
 import com.example.apiuser.domain.member.vo.MemberReq;
 import com.example.modulecore.response.ResponseService;
 import com.example.modulecore.response.SingleResult;
@@ -15,13 +16,12 @@ public class MemberJoinService {
 
 
   private final MemberRepository memberRepository;
-  private final ResponseService responseService;
 
   private final PasswordEncoder passwordEncoder;
 
-  public SingleResult<Member> join(MemberReq memberReq){
+  public MemberInfoRes join(MemberReq memberReq){
     encodingPassword(memberReq);
-    return responseService.getSingleResult( memberRepository.save(memberReq.toMember()));
+    return MemberInfoRes.of(memberRepository.save(memberReq.toMember()));
   }
 
   private void encodingPassword(MemberReq memberReq) {
