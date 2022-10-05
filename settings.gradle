@@ -1,0 +1,6 @@
+rootProject.name = 'back-guidev2'
+include('module-domain')
+include('module-core')
+include('module-infra')
+include('module-system')
+include('api-user')

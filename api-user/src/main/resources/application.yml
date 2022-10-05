@@ -1,0 +1,68 @@
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  redis:
+    host: localhost
+    port: 6379
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 1000
+        discriminator:
+          ignore_explicit_for_joined: false
+        hbm2ddl:
+          auto: create-drop
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jwt:
+    secret-key: hiberna- te
+    access-token-invalid-hour: 720
+    refresh-token-invalid-hour: 720
+    blacklist:
+      access-token: logout
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    level:
+      com:
+        amazonaws:
+          util:
+            EC2MetadataUtils: error
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: ap-northeast-2
+    credentials:
+      access-key: AKIAUYJVJZYSWOH7WJOF
+      secret-key: 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
+    s3:
+      file-bucket: i-solution-file-bucket
+      img-bucket: i-solution-img-bucket
+
+
+qr:
+  secret-key: is!Qr-key-test
+  expiration-minute: 60 # ????? 2??? ??!

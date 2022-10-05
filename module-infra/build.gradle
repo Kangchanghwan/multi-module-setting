@@ -1,0 +1,6 @@
+bootJar { enabled = false }
+jar { enabled = true }
+dependencies {
+    // aws
+    api 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+}
