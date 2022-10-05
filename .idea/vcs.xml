@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="" />
-    <mapping directory="$PROJECT_DIR$/api-user" vcs="" />
-    <mapping directory="$PROJECT_DIR$/module-core" vcs="" />
-    <mapping directory="$PROJECT_DIR$/module-domain" vcs="" />
-    <mapping directory="$PROJECT_DIR$/module-infra" vcs="" />
-    <mapping directory="$PROJECT_DIR$/module-system" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
