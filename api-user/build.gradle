@@ -25,6 +25,8 @@ dependencies {
     // MockMvc 대신 WebTestClient을 사용하려면 spring-restdocs-webtestclient 추가
     // MockMvc 대신 REST Assured를 사용하려면 spring-restdocs-restassured 를 추가
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+    testCompileOnly 'org.projectlombok:lombok:1.18.24' // 테스트 의존성 추가
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24' // 테스트 의존성 추가
 }
 
 ext {
@@ -46,9 +48,9 @@ asciidoctor { // asciidoctor 작업 구성
 
     // source가 없으면 .adoc파일을 전부 html로 만들어버림
     // source 지정시 특정 adoc만 HTML로 만든다.
-    sources{
-        include("**/index.adoc","**/common/*.adoc")
-    }
+//    sources{
+//        include("**/index.adoc","**/common/*.adoc")
+//    }
 
     // 특정 .adoc에 다른 adoc 파일을 가져와서(include) 사용하고 싶을 경우 경로를 baseDir로 맞춰주는 설정입니다.
     // 개별 adoc으로 운영한다면 필요 없는 옵션입니다.
@@ -71,7 +73,6 @@ task copyDocument(type: Copy) {
 build {
     dependsOn copyDocument
 }
-
 
 // 참고사항 //
 // 공식 문서에서는 위의 ascidoctor.doFirst부터 아래 내용은 없고 이와 같은 내용만 있습니다.

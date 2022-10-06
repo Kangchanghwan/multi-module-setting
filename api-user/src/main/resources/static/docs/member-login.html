@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>Overview</title>
+<title>로그인</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,166 +435,86 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-    function ready(callbackFunc) {
-        if (document.readyState !== 'loading') {
-            // Document is already ready, call the callback directly
-            callbackFunc();
-        } else if (document.addEventListener) {
-            // All modern browsers to register DOMContentLoaded
-            document.addEventListener('DOMContentLoaded', callbackFunc);
-        } else {
-            // Old IE browsers
-            document.attachEvent('onreadystatechange', function () {
-                if (document.readyState === 'complete') {
-                    callbackFunc();
-                }
-            });
-        }
-    }
-
-    function openPopup(event) {
-
-        const target = event.target;
-        if (target.className !== "popup") {
-            return;
-        }
-
-        event.preventDefault();
-        const screenX = event.screenX;
-        const screenY = event.screenY;
-        window.open(target.href, target.text, `left=${screenX}, top=${screenY}, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no`);
-    }
-
-    ready(function () {
-        const el = document.getElementById("content");
-        el.addEventListener("click", event => openPopup(event), false);
-    });
-</script>
 </head>
-<body class="book toc2 toc-left">
+<body class="article">
 <div id="header">
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#overview">Overview</a>
-<ul class="sectlevel2">
-<li><a href="#호스트-서버">호스트 서버</a></li>
-<li><a href="#HTTP-상태-코드">HTTP 상태 코드</a></li>
-<li><a href="#HTTP-공통-에러-코드">HTTP 공통 에러 코드</a></li>
-</ul>
-</li>
-<li><a href="#API-List">APIs</a>
-<ul class="sectlevel2">
-<li><a href="#_member_api">Member API</a></li>
-</ul>
-</li>
-</ul>
-</div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
-<div class="sectionbody">
 <div class="sect2">
-<h3 id="호스트-서버"><a class="link" href="#호스트-서버">호스트 서버</a></h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">환경</th>
-<th class="tableblock halign-left valign-top">Host</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beta</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>localhost:8080</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Production</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://gjgs-test.com" class="bare">https://gjgs-test.com</a></code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="HTTP-상태-코드"><a class="link" href="#HTTP-상태-코드">HTTP 상태 코드</a></h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">상태 코드</th>
-<th class="tableblock halign-left valign-top">설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>200 OK</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">성공</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>400 Bad Request</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">잘못된 요청</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="HTTP-공통-에러-코드"><a class="link" href="#HTTP-공통-에러-코드">HTTP 공통 에러 코드</a></h3>
+<h3 id="_로그인">로그인</h3>
 <div class="sect3">
-<h4 id="HTTP-공통-에러-코드_http_response"><a class="link" href="#HTTP-공통-에러-코드_http_response">HTTP response</a></h4>
+<h4 id="_로그인_http_request">HTTP request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code data-lang="http" class="language-http hljs">HTTP/1.1 400 Bad Request
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">POST /api/v1/login HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 282
+Content-Length: 51
+Host: localhost:8080
 
 {
-  "success" : false,
-  "code" : 800,
-  "msg" : "Validation failed.",
-  "list" : [ {
-    "field" : "email",
-    "message" : "must be a well-formed email address",
-    "code" : "Email"
-  }, {
-    "field" : "name",
-    "message" : "must not be empty",
-    "code" : "NotEmpty"
-  } ]
+  "userId" : "user1",
+  "password" : "12341234"
 }</code></pre>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="HTTP-공통-에러-코드_response_fields"><a class="link" href="#HTTP-공통-에러-코드_response_fields">Response fields</a></h4>
+<h4 id="_로그인_request_fields">Request fields</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">필드명</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">타입</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">필수여부</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">제약조건</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>userId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">회원 ID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>password</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">회원 Password</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_로그인_http_response">HTTP response</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 279
 
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="API-List"><a class="link" href="#API-List">APIs</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_member_api"><a class="link" href="#_member_api">Member API</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="member-login.html" target="_blank" rel="noopener">로그인 API</a></p>
-</li>
-<li>
-<p><a href="member-join.html" target="_blank" rel="noopener">회원가입 API</a></p>
-</li>
-</ul>
+{
+  "success" : true,
+  "code" : 0,
+  "msg" : "성공하였습니다.",
+  "data" : {
+    "accessToken" : "accessToken",
+    "refreshToken" : "refreshToken",
+    "userId" : "user1",
+    "id" : 1,
+    "name" : "홍길동",
+    "role" : "ROLE_LV1",
+    "socialType" : "NORMAL"
+  }
+}</code></pre>
 </div>
 </div>
 </div>
@@ -603,11 +523,8 @@ Content-Length: 282
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1-SNAPSHOT<br>
-Last updated 2022-10-06 17:45:35 +0900
+Last updated 2022-10-06 17:43:51 +0900
 </div>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<script>hljs.initHighlighting()</script>
 </body>
 </html>

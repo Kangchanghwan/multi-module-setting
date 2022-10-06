@@ -1,6 +1,7 @@
 package com.example.apiuser.domain.member.controller;
 
 import com.example.apiuser.config.RestDocsTestSupport;
+import com.example.apiuser.config.document.utils.DocumentLinkGenerator;
 import com.example.apiuser.domain.member.res.LoginRes;
 import com.example.apiuser.domain.member.res.MemberInfoRes;
 import com.example.apiuser.domain.member.service.MemberAccountService;
@@ -8,6 +9,7 @@ import com.example.apiuser.domain.member.service.MemberJoinService;
 import com.example.apiuser.domain.member.service.MemberListService;
 import com.example.apiuser.domain.member.vo.LoginReq;
 import com.example.apiuser.domain.member.vo.MemberReq;
+import com.example.moduledomain.member.entity.SocialType;
 import com.example.modulesystem.handler.GlobalExceptionHandler;
 import com.example.modulesystem.handler.UnknownExceptionHandler;
 import com.example.modulesystem.security.Role;
@@ -32,6 +34,7 @@ import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import static com.example.apiuser.config.RestDocsConfig.field;
+import static com.example.apiuser.config.document.utils.DocumentLinkGenerator.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -52,7 +55,6 @@ class MemberControllerTest extends RestDocsTestSupport {
   final String LOGIN = "/api/v1/login";
 
 
-
   @Test
   public void 회원가입() throws Exception {
 
@@ -61,29 +63,34 @@ class MemberControllerTest extends RestDocsTestSupport {
     memberReq.setName("테스트1");
     memberReq.setPassword("12341234");
     memberReq.setUserId("coke");
+    memberReq.setSocialType(SocialType.NORMAL);
+    MemberInfoRes memberInfoRes =
+      MemberInfoRes
+        .builder()
+        .id(1L)
+        .name("테스트1")
+        .userId("coke")
+        .socialType(SocialType.NORMAL)
+        .role(Role.ROLE_LV1).build();
 
-    MemberInfoRes memberInfoRes = MemberInfoRes.builder()
-                                                .id(1L)
-                                                .name("테스트1")
-                                                .userId("coke")
-                                                  .role(Role.ROLE_LV1).build();
-
-    when(memberJoinService.join(any())).thenReturn(memberInfoRes);
+    when(memberJoinService.normalJoin(any())).thenReturn(memberInfoRes);
 
     //when then
     mockMvc.perform(post(JOIN)
-        .content(objectMapper.writeValueAsString(memberReq))
+        .content(createJson(memberReq))
         .contentType(MediaType.APPLICATION_JSON))
       .andExpect(status().isOk())
       .andDo(
-        restDocs.document( requestFields(
-          fieldWithPath("name").type(STRING).description("회원 이름").attributes(field("constraints","길이 10 이하")),
-          fieldWithPath("userId").type(STRING).description("회원 아이디").attributes(field("constraints","길이 30이하")),
-          fieldWithPath("password").type(STRING).description("회원 비밀번호").attributes(field("constraints","길이 30이하"))
-        )
+        restDocs.document(requestFields(
+            fieldWithPath("name").type(STRING).description("회원 이름").attributes(field("constraints", "길이 10 이하")),
+            fieldWithPath("userId").type(STRING).description("회원 아이디").attributes(field("constraints", "길이 30이하")),
+            fieldWithPath("password").type(STRING).description("회원 비밀번호").attributes(field("constraints", "길이 30이하")),
+            fieldWithPath("socialType").type(STRING).description(generateLinkCode(DocUrl.SOCIAL_TYPE))
+          )
         )
       );
   }
+
   @Test
   public void 로그인() throws Exception {
     //given
@@ -93,6 +100,7 @@ class MemberControllerTest extends RestDocsTestSupport {
       .name("홍길동")
       .refreshToken("refreshToken")
       .role(Role.ROLE_LV1)
+      .socialType(SocialType.NORMAL)
       .userId("user1").build();
     when(memberAccountService.login(any())).thenReturn(loginRes);
 
@@ -102,8 +110,8 @@ class MemberControllerTest extends RestDocsTestSupport {
 
     //when then
     mockMvc.perform(post(LOGIN)
-      .content(objectMapper.writeValueAsString(loginReq))
-      .contentType(MediaType.APPLICATION_JSON))
+        .content(createJson(loginReq))
+        .contentType(MediaType.APPLICATION_JSON))
       .andExpect(status().isOk())
       .andDo(
         restDocs.document(
@@ -116,7 +124,8 @@ class MemberControllerTest extends RestDocsTestSupport {
             fieldWithPath("name").type(STRING).description("이름"),
             fieldWithPath("accessToken").type(STRING).description("JWT Access Token"),
             fieldWithPath("refreshToken").type(STRING).description("JWT Refresh Token"),
-            fieldWithPath("role").type(STRING).description("권한")
+            fieldWithPath("role").type(STRING).description("권한"),
+            fieldWithPath("socialType").type(STRING).description("소셜 로그인 정보")
           )
         )
       );

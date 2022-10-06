@@ -4,8 +4,7 @@ import com.example.apiuser.domain.member.controller.MemberController;
 import com.example.apiuser.domain.member.service.MemberAccountService;
 import com.example.apiuser.domain.member.service.MemberJoinService;
 import com.example.apiuser.domain.member.service.MemberListService;
-import com.example.modulecore.response.ResponseService;
-import com.example.moduledomain.member.repository.MemberRepository;
+
 import com.example.modulesystem.handler.GlobalExceptionHandler;
 import com.example.modulesystem.handler.UnknownExceptionHandler;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -24,22 +23,19 @@ public abstract class ControllerTest {
 
   @Autowired
   protected ObjectMapper objectMapper;
-
   @Autowired
   protected MockMvc mockMvc;
-
   @MockBean
   protected MemberListService memberListService;
   @MockBean
   protected MemberJoinService memberJoinService;
   @MockBean
   protected MemberAccountService memberAccountService;
-  @MockBean
+  @Autowired
   protected UnknownExceptionHandler unknownExceptionHandler;
-  @MockBean
+  @Autowired
   protected GlobalExceptionHandler globalExceptionHandler;
-//  @MockBean
-//  protected ResponseService responseService;
+
 
   protected String createJson(Object dto) throws JsonProcessingException {
     return objectMapper.writeValueAsString(dto);

@@ -19,8 +19,9 @@ public class MemberJoinService {
 
   private final PasswordEncoder passwordEncoder;
 
-  public MemberInfoRes join(MemberReq memberReq){
+  public MemberInfoRes normalJoin(MemberReq memberReq){
     encodingPassword(memberReq);
+
     return MemberInfoRes.of(memberRepository.save(memberReq.toMember()));
   }
 

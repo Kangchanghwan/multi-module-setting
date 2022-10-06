@@ -1,16 +1,18 @@
-= REST Docs 문서 만들기 (글의 제목)
-backtony.github.io(부제)
 :doctype: book
 :icons: font
-:source-highlighter: highlightjs // 문서에 표기되는 코드들의 하이라이팅을 highlightjs를 사용
-:toc: left // toc (Table Of Contents)를 문서의 좌측에 두기
+:source-highlighter: highlightjs
+:toc: left
 :toclevels: 2
 :sectlinks:
+:docinfo: shared-head
 
-[[Member-API]]
-== Member API
+include::overview.adoc[]
 
-=== 회원 가입
-operation::member-controller-test/회원가입[snippets='http-request,request-fields,http-response']
+[[API-List]]
+== APIs
 
-include::login.adoc[]
+=== Member API
+
+* link:member-login.html[로그인 API, window=_blank]
+
+* link:member-join.html[회원가입 API, window=_blank]

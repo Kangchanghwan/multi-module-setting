@@ -1,6 +1,7 @@
 package com.example.apiuser.config;
 
 import com.example.modulecore.response.ResponseService;
+import com.example.modulesystem.handler.GlobalExceptionHandler;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.restdocs.mockmvc.MockMvcRestDocumentation;
@@ -28,7 +29,7 @@ public class RestDocsConfig {
       Preprocessors.preprocessResponse(Preprocessors.prettyPrint())
     );
   }
-  public static final Attribute field(
+  public static Attribute field(
     final String key,
     final String value){
     return new Attribute(key,value);

@@ -37,7 +37,7 @@ public class MemberController {
   @PostMapping("/members")
   @ResponseStatus(HttpStatus.OK)
   public SingleResult<MemberInfoRes> save(@RequestBody @Validated MemberReq memberReq){
-    return responseService.getSingleResult(memberJoinService.join(memberReq));
+    return responseService.getSingleResult(memberJoinService.normalJoin(memberReq));
   }
 
   @PostMapping("/login")

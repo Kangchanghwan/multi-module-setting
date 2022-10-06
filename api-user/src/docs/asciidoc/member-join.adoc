@@ -1,0 +1,2 @@
+=== 회원 가입
+operation::member-controller-test/회원가입[snippets='http-request,request-fields,http-response']

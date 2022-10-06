@@ -1,6 +1,7 @@
 package com.example.apiuser.domain.member.vo;
 
 import com.example.moduledomain.member.entity.Member;
+import com.example.moduledomain.member.entity.SocialType;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
@@ -22,10 +23,13 @@ public class MemberReq {
   @Length(max = 10)
   private String name;
 
+  private SocialType socialType;
+
   public Member toMember() {
     return Member.builder()
       .userId(this.userId)
       .password(this.password)
+      .socialType(SocialType.NORMAL)
       .name(this.name).build();
   }
 

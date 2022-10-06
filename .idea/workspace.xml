@@ -5,31 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/login.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsTestSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-fields.snippet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-parameters.snippet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-part-fields.snippet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/request-parts.snippet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/response-fields.snippet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/common/social-type.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/docinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/member-join.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/overview.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/common/social-type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/ApiResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CommonDocController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CommonDocControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CustomResponseFieldsSnippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/EnumDocs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/CustomResponseFieldsSnippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/DocumentLinkGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/RestDocsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/custom-response-fields.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/docment/EnumType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/SocialType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/docs/asciidoc/login.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/member-login.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/ApiUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/ApiUserApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/ListResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/ListResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/SingleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/response/SingleResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +111,7 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -154,7 +164,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
     "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "/Users/gangchanghwan/Documents/back-guidev2/api-user/src/test/resources/org/springframework/restdocs/templates",
+    "last_opened_file_path": "/Users/gangchanghwan/Documents/back-guidev2/api-user/src/docs/asciidoc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -172,11 +182,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-user/src/docs/asciidoc" />
+      <recent name="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document" />
       <recent name="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates" />
       <recent name="$PROJECT_DIR$/api-user/src/test/resources" />
       <recent name="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser" />
-      <recent name="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain" />
-      <recent name="$PROJECT_DIR$/module-system/src/main/java/com/example/modulesystem" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -199,25 +209,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.back-guidev2:api-user [build]">
-    <configuration name="MemberControllerTest.로그인 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="back-guidev2 [asciidoctor]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":api-user:test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.apiuser.domain.member.controller.MemberControllerTest.로그인&quot;" />
+            <option value="asciidoctor" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -243,22 +251,39 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommonDocControllerTest.enums" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back-guidev2.api-user.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.apiuser.domain.member.controller.*" />
+          <option name="PATTERN" value="com.example.apiuser.config.document.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.apiuser.domain.member.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.domain.member.controller.MemberControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.apiuser.config.document" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.config.document.CommonDocControllerTest" />
+      <option name="METHOD_NAME" value="enums" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberControllerTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommonDocControllerTest.errorSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-guidev2.api-user.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apiuser.config.document.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apiuser.config.document" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apiuser.config.document.CommonDocControllerTest" />
+      <option name="METHOD_NAME" value="errorSample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberControllerTest.로그인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back-guidev2.api-user.test" />
       <extension name="coverage">
         <pattern>
@@ -268,7 +293,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.apiuser.domain.member.controller" />
       <option name="MAIN_CLASS_NAME" value="com.example.apiuser.domain.member.controller.MemberControllerTest" />
-      <option name="METHOD_NAME" value="회원가입" />
+      <option name="METHOD_NAME" value="로그인" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -349,11 +374,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.MemberControllerTest.로그인 (1)" />
+      <item itemvalue="Gradle.back-guidev2 [asciidoctor]" />
       <item itemvalue="Gradle.back-guidev2:api-user [build]" />
-      <item itemvalue="JUnit.MemberControllerTest" />
+      <item itemvalue="JUnit.CommonDocControllerTest.enums" />
+      <item itemvalue="JUnit.CommonDocControllerTest.errorSample" />
       <item itemvalue="JUnit.MemberControllerTest.로그인" />
-      <item itemvalue="JUnit.MemberControllerTest.회원가입" />
       <item itemvalue="Spring Boot.ApiUserApplication" />
       <item itemvalue="Spring Boot.ApiUserApplication (1)" />
       <item itemvalue="Spring Boot.ModuleCoreApplication" />
@@ -366,10 +391,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.back-guidev2:api-user [build]" />
-        <item itemvalue="JUnit.MemberControllerTest" />
+        <item itemvalue="Gradle.back-guidev2 [asciidoctor]" />
+        <item itemvalue="JUnit.CommonDocControllerTest.errorSample" />
+        <item itemvalue="JUnit.CommonDocControllerTest.enums" />
         <item itemvalue="JUnit.MemberControllerTest.로그인" />
-        <item itemvalue="JUnit.MemberControllerTest.회원가입" />
-        <item itemvalue="Gradle.MemberControllerTest.로그인 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -386,7 +411,8 @@
       <workItem from="1664883296853" duration="575000" />
       <workItem from="1664884188987" duration="18000" />
       <workItem from="1664935362331" duration="3270000" />
-      <workItem from="1664938655631" duration="24792000" />
+      <workItem from="1664938655631" duration="26421000" />
+      <workItem from="1665017547185" duration="15245000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1664883534383</created>
@@ -416,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664939165548</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" spring restDocs 적용">
+      <created>1664969571538</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664969571538</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +472,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value=" spring restDocs 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value=" spring restDocs 적용" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

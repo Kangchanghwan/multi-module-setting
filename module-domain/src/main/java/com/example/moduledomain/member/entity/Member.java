@@ -19,4 +19,8 @@ public class Member {
   private String userId;
   @Column
   private String password;
+  @Column
+  @Enumerated(EnumType.STRING)
+  private SocialType socialType;
+
 }
