@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/common/social-type.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/docinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/member-join.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/overview.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/common/social-type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-api.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-join.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/member-login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/overview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/ApiResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CommonDocController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CommonDocControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/CustomResponseFieldsSnippet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/EnumDocs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/CustomResponseFieldsSnippet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/DocumentLinkGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/document/utils/RestDocsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/test/resources/org/springframework/restdocs/templates/custom-response-fields.snippet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module-core/src/main/java/com/example/modulecore/docment/EnumType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/SocialType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/index.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/docs/asciidoc/login.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/docs/asciidoc/member-login.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/MemberInfoRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberJoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/vo/MemberReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/resources/static/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/config/RestDocsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/test/java/com/example/apiuser/domain/member/controller/MemberControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +379,7 @@
       <workItem from="1664884188987" duration="18000" />
       <workItem from="1664935362331" duration="3270000" />
       <workItem from="1664938655631" duration="26421000" />
-      <workItem from="1665017547185" duration="15245000" />
+      <workItem from="1665017547185" duration="15299000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1664883534383</created>
@@ -449,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664969571538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" spring restDocs 고도화">
+      <created>1665047324447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665047324447</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +447,8 @@
     </ignored-roots>
     <MESSAGE value="init" />
     <MESSAGE value=" spring restDocs 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value=" spring restDocs 적용" />
+    <MESSAGE value=" spring restDocs 고도화" />
+    <option name="LAST_COMMIT_MESSAGE" value=" spring restDocs 고도화" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -12,14 +12,11 @@ import com.example.apiuser.domain.member.vo.MemberReq;
 import com.example.modulecore.response.ListResult;
 import com.example.modulecore.response.ResponseService;
 import com.example.modulecore.response.SingleResult;
-import com.example.moduledomain.member.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
