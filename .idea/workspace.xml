@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/oauth/OAuth2SuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/oauth/Provider/FacebookUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/oauth/Provider/GoogleUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/oauth/Provider/NaverUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/oauth/Provider/OAuth2UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/PrincipalOauth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/AuthMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/AuthMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/config/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/res/LoginRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/SocialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/src/main/java/com/example/moduledomain/member/entity/SocialType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,7 +365,7 @@
       <workItem from="1664884188987" duration="18000" />
       <workItem from="1664935362331" duration="3270000" />
       <workItem from="1664938655631" duration="26421000" />
-      <workItem from="1665017547185" duration="25608000" />
+      <workItem from="1665017547185" duration="27321000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1664883534383</created>
@@ -427,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665047367626</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="OAuth2 소셜로그인 추가">
+      <created>1665104116170</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665104116170</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +449,8 @@
     <MESSAGE value=" spring restDocs 적용" />
     <MESSAGE value=" spring restDocs 고도화" />
     <MESSAGE value="import문 최적화" />
-    <option name="LAST_COMMIT_MESSAGE" value="import문 최적화" />
+    <MESSAGE value="OAuth2 소셜로그인 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="OAuth2 소셜로그인 추가" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
