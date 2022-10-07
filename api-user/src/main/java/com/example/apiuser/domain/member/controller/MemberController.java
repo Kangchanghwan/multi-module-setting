@@ -9,6 +9,7 @@ import com.example.apiuser.domain.member.service.MemberJoinService;
 import com.example.apiuser.domain.member.service.MemberListService;
 import com.example.apiuser.domain.member.vo.LoginReq;
 import com.example.apiuser.domain.member.vo.MemberReq;
+import com.example.modulecore.response.CommonResult;
 import com.example.modulecore.response.ListResult;
 import com.example.modulecore.response.ResponseService;
 import com.example.modulecore.response.SingleResult;
@@ -17,6 +18,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequiredArgsConstructor
@@ -50,6 +53,12 @@ public class MemberController {
   @GetMapping("/members/account")
   public SingleResult<MemberInfoRes> findOne(@AuthenticationPrincipal AuthMember authMember){
     return responseService.getSingleResult(memberAccountService.getInfo(authMember.getUsername()));
+  }
+
+  @GetMapping("/logout")
+  public CommonResult logout(@AuthenticationPrincipal AuthMember user, HttpServletRequest request){
+    memberAccountService.logout(user.getUserId(),request.getHeader("Authorization").substring(7));
+    return responseService.getSuccessResult();
   }
 
 }

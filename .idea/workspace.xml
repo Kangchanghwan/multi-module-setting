@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f49e813-68e6-4e3e-a9df-e44ce1944444" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module-domain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-user/src/main/java/com/example/apiuser/domain/member/service/MemberAccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,7 +364,7 @@
       <workItem from="1664884188987" duration="18000" />
       <workItem from="1664935362331" duration="3270000" />
       <workItem from="1664938655631" duration="26421000" />
-      <workItem from="1665017547185" duration="27321000" />
+      <workItem from="1665017547185" duration="29468000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1664883534383</created>
@@ -423,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665104116170</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="루트 프로젝트 build.gradle에 querydsl 라인 삭제">
+      <created>1665109890382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665109890382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +456,8 @@
     <MESSAGE value=" spring restDocs 고도화" />
     <MESSAGE value="import문 최적화" />
     <MESSAGE value="OAuth2 소셜로그인 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth2 소셜로그인 추가" />
+    <MESSAGE value="루트 프로젝트 build.gradle에 querydsl 라인 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="루트 프로젝트 build.gradle에 querydsl 라인 삭제" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

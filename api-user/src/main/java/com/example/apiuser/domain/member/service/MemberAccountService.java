@@ -31,6 +31,10 @@ public class MemberAccountService {
 
   }
 
+  public void logout(String userId, String accessToken) {
+    jwtProvider.logout(userId, accessToken);
+  }
+
   private Supplier<UsernameNotFoundException> notFoundMember() {
     return () -> new UsernameNotFoundException("해당하는 유저를 찾을 수 없습니다.");
   }
