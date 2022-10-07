@@ -1,6 +1,8 @@
 package com.example.apiuser.config.security;
 
+import com.example.apiuser.config.security.oauth.OAuth2SuccessHandler;
 import com.example.apiuser.domain.member.service.CustomUserDetailService;
+import com.example.apiuser.domain.member.service.PrincipalOauth2UserService;
 import com.example.modulesystem.security.CustomAccessDeniedHandler;
 import com.example.modulesystem.security.CustomAuthenticationEntryPoint;
 import com.example.modulesystem.security.EndPointAccessByLevel;
@@ -32,7 +34,9 @@ public class SecurityConfiguration {
 
   private final JwtProvider jwtProvider;
   private final CustomAccessDeniedHandler customAccessDeniedHandler;
+  private final PrincipalOauth2UserService principalOauth2UserService;
 
+  private final OAuth2SuccessHandler oAuth2SuccessHandler;
   private final CustomUserDetailService customUserDetailService;
   private final CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
   @Value("${spring.config.activate.on-profile}")
@@ -66,7 +70,8 @@ public class SecurityConfiguration {
         .authenticationEntryPoint(customAuthenticationEntryPoint)
         .accessDeniedHandler(customAccessDeniedHandler)
         .and()
-        .addFilterBefore(new CustomAuthorizationFilter(jwtProvider,customUserDetailService), UsernamePasswordAuthenticationFilter.class);
+        .addFilterBefore(new CustomAuthorizationFilter(jwtProvider,customUserDetailService), UsernamePasswordAuthenticationFilter.class)
+        .oauth2Login().loginPage("/login").successHandler(oAuth2SuccessHandler).userInfoEndpoint().userService(principalOauth2UserService);
       log.info("---------운영, 테스트 환경 security 설정을 종료합니다. -------");
       authorizeRequests(http); // 권한 설정
 
@@ -103,7 +108,8 @@ public class SecurityConfiguration {
       .antMatchers("/api/**/comments").permitAll()
       .antMatchers("/api/**/comments/**/**").permitAll()
       .antMatchers("/api/**/comments/parents/**").permitAll()
-
+      .antMatchers("/oauth2/authorization/**").permitAll()
+      .antMatchers("/login/**").permitAll()
       .antMatchers(GET, "/api/**/img/**").permitAll()
 
 //          지출결의
@@ -119,9 +125,10 @@ public class SecurityConfiguration {
       .antMatchers("/api/**/re-issue").authenticated() // 인증된 사용자만 접근 허용
       .antMatchers(GET, "/api/**/members", "/api/**/members/**").authenticated()
       .anyRequest().authenticated()// 그 외 항목 전부 인증 적용
-
       .and()
-      .addFilterBefore(new CustomAuthorizationFilter(jwtProvider,customUserDetailService), UsernamePasswordAuthenticationFilter.class);
+      .addFilterBefore(new CustomAuthorizationFilter(jwtProvider,customUserDetailService), UsernamePasswordAuthenticationFilter.class)
+      .oauth2Login().loginPage("/login").successHandler(oAuth2SuccessHandler).userInfoEndpoint().userService(principalOauth2UserService);// oauth2
+
     log.info("---------개발 환경 security 설정을 종료합니다. -------");
 
 

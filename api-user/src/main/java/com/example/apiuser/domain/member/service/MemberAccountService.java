@@ -3,8 +3,6 @@ package com.example.apiuser.domain.member.service;
 import com.example.apiuser.domain.member.res.LoginRes;
 import com.example.apiuser.domain.member.res.MemberInfoRes;
 import com.example.apiuser.domain.member.vo.LoginReq;
-import com.example.modulecore.response.ResponseService;
-import com.example.modulecore.response.SingleResult;
 import com.example.moduledomain.member.entity.Member;
 import com.example.moduledomain.member.repository.MemberRepository;
 import com.example.modulesystem.security.JwtProvider;
@@ -29,7 +27,7 @@ public class MemberAccountService {
     String accessToken = jwtProvider.createAccessToken(member.getUserId());
     String refreshToken = jwtProvider.createRefreshToken(member.getUserId());
 
-    return LoginRes.of(accessToken,refreshToken,member);
+    return LoginRes.of(accessToken,refreshToken);
 
   }
 

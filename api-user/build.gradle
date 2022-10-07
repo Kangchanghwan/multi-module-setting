@@ -8,7 +8,11 @@ configurations {
 }
 
 dependencies {
+    //oauth2
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-oauth2-client', version: '2.6.3'
+    //web
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    //validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     //core
     implementation project(':module-core')
